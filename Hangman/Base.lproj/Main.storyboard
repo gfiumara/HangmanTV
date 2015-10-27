@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Level View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChooseLevelViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="brv-jt-ScB">
+                                <rect key="frame" x="120" y="0.0" width="1680" height="1080"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sof-9t-tkz">
+                                        <rect key="frame" x="0.0" y="497" width="427" height="86"/>
+                                        <animations/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Easy"/>
+                                        <connections>
+                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Easy" id="A6P-7M-svF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-W6-S6P">
+                                        <rect key="frame" x="627" y="497" width="426" height="86"/>
+                                        <animations/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Medium"/>
+                                        <connections>
+                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Medium" id="zHi-Hf-1Vu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-IE-CH6">
+                                        <rect key="frame" x="1253" y="497" width="427" height="86"/>
+                                        <animations/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Hard"/>
+                                        <connections>
+                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Hard" id="Dnc-3M-DEh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="brv-jt-ScB" secondAttribute="bottom" id="cqw-CL-aLY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="brv-jt-ScB" secondAttribute="trailing" constant="100" id="k65-6j-P52"/>
+                            <constraint firstItem="brv-jt-ScB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="oYW-p6-S1x"/>
+                            <constraint firstItem="brv-jt-ScB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s2j-ud-kWP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="-1034"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="nY4-FP-LJA">
+            <objects>
+                <viewController id="Q3k-42-2N5" customClass="HMAGameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5SQ-Kk-OdX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysF-Vb-Z6p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="94Q-Ow-pCu">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Khb-4f-MWk" customClass="HMAKeyboardCollectionView" customModule="Hangman" customModuleProvider="target">
+                                <rect key="frame" x="20" y="8" width="460" height="1080"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g3q-Ti-Q2y">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="50" minY="50" maxX="50" maxY="50"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HMAKeyboardCollectionViewCellIdentifier" id="J60-64-s67" customClass="HMAKeyboardCollectionViewCell" customModule="Hangman" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="50" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EX0-Jy-WML">
+                                                    <rect key="frame" x="8" y="8" width="74" height="74"/>
+                                                    <animations/>
+                                                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                    <connections>
+                                                        <action selector="keyboardButtonPressed:" destination="Q3k-42-2N5" eventType="primaryActionTriggered" id="0fQ-Tk-3ng"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnJ-A5-T8w">
+                                                    <rect key="frame" x="8" y="8" width="74" height="74"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="EX0-Jy-WML" secondAttribute="bottom" id="2NO-og-Se7"/>
+                                            <constraint firstItem="EX0-Jy-WML" firstAttribute="leading" secondItem="J60-64-s67" secondAttribute="leadingMargin" id="66I-xO-fmo"/>
+                                            <constraint firstItem="EX0-Jy-WML" firstAttribute="top" secondItem="J60-64-s67" secondAttribute="topMargin" id="PXU-Hf-WKE"/>
+                                            <constraint firstItem="UnJ-A5-T8w" firstAttribute="leading" secondItem="EX0-Jy-WML" secondAttribute="leading" id="Vwn-oN-Yf1"/>
+                                            <constraint firstItem="UnJ-A5-T8w" firstAttribute="top" secondItem="EX0-Jy-WML" secondAttribute="top" id="Y6M-fo-W4h"/>
+                                            <constraint firstItem="UnJ-A5-T8w" firstAttribute="bottom" secondItem="EX0-Jy-WML" secondAttribute="bottom" id="daE-Oh-TH3"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EX0-Jy-WML" secondAttribute="trailing" id="eZR-kH-ueb"/>
+                                            <constraint firstItem="UnJ-A5-T8w" firstAttribute="trailing" secondItem="EX0-Jy-WML" secondAttribute="trailing" id="sq4-4c-fc3"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="EX0-Jy-WML" id="8iT-XI-kfG"/>
+                                            <outlet property="label" destination="UnJ-A5-T8w" id="IXY-9B-hho"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="delegate" destination="Q3k-42-2N5" id="wm3-n7-7oJ"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMW-ik-9Qu" customClass="GallowsView" customModule="Hangman" customModuleProvider="target">
+                                <rect key="frame" x="800" y="86" width="800" height="800"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HMW-ik-9Qu" secondAttribute="height" multiplier="1:1" id="jvt-TX-pX7"/>
+                                    <constraint firstAttribute="width" constant="800" id="p2A-Jg-PzS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_   _   _   _   _   _   _   _" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvU-6L-FZw">
+                                <rect key="frame" x="591" y="916" width="1219" height="80"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="70"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty: Medium" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-Kd-fWt">
+                                <rect key="frame" x="1699" y="1030" width="201" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="HMW-ik-9Qu" firstAttribute="centerY" secondItem="94Q-Ow-pCu" secondAttribute="centerY" multiplier="0.9" id="74h-nO-Iq6"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="leading" secondItem="94Q-Ow-pCu" secondAttribute="leadingMargin" id="8GE-y4-5xS"/>
+                            <constraint firstItem="HMW-ik-9Qu" firstAttribute="centerX" secondItem="94Q-Ow-pCu" secondAttribute="centerX" multiplier="1.25" id="8qG-g5-nrf"/>
+                            <constraint firstItem="rvU-6L-FZw" firstAttribute="centerX" secondItem="HMW-ik-9Qu" secondAttribute="centerX" id="EQd-h3-dLF"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="bottom" secondItem="ysF-Vb-Z6p" secondAttribute="top" constant="8" symbolic="YES" id="GbU-bu-TTv"/>
+                            <constraint firstItem="ysF-Vb-Z6p" firstAttribute="top" secondItem="YeY-Kd-fWt" secondAttribute="bottom" constant="20" id="LD0-G8-Kzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeY-Kd-fWt" secondAttribute="trailing" id="c0Q-OO-a4C"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="top" secondItem="5SQ-Kk-OdX" secondAttribute="bottom" constant="8" symbolic="YES" id="cYY-pn-afj"/>
+                            <constraint firstItem="rvU-6L-FZw" firstAttribute="top" secondItem="HMW-ik-9Qu" secondAttribute="bottom" constant="30" id="x0U-ud-vNd"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="trailing" secondItem="94Q-Ow-pCu" secondAttribute="centerXWithinMargins" multiplier="0.5" id="xDb-Fg-WTC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="difficultyLabel" destination="YeY-Kd-fWt" id="fqp-Mc-bGR"/>
+                        <outlet property="gallowsDrawingView" destination="HMW-ik-9Qu" id="rLh-dB-MAN"/>
+                        <outlet property="guessedWordLabel" destination="rvU-6L-FZw" id="YVt-RE-bLi"/>
+                        <outlet property="keyboardView" destination="Khb-4f-MWk" id="tnu-w8-k3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAM-A8-IEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="275"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zHi-Hf-1Vu"/>
+    </inferredMetricsTieBreakers>
+</document>
