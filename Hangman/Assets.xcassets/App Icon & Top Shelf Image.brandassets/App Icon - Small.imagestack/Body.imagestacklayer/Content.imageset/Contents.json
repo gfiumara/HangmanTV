@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "tv",
-      "filename" : "topShelfLayer.png",
+      "filename" : "bodyLayer.png",
       "scale" : "1x"
     }
   ],

@@ -1,13 +1,19 @@
 {
   "layers" : [
     {
-      "filename" : "Front.imagestacklayer"
+      "filename" : "Body.imagestacklayer"
     },
     {
-      "filename" : "Middle.imagestacklayer"
+      "filename" : "Gallows.imagestacklayer"
     },
     {
-      "filename" : "Back.imagestacklayer"
+      "filename" : "Sky.imagestacklayer"
+    },
+    {
+      "filename" : "Grass.imagestacklayer"
+    },
+    {
+      "filename" : "Background.imagestacklayer"
     }
   ],
   "info" : {
