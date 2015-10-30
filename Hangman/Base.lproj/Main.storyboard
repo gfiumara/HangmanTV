@@ -19,36 +19,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="brv-jt-ScB">
-                                <rect key="frame" x="120" y="0.0" width="1680" height="1080"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3A3-nl-E64">
+                                <rect key="frame" x="100" y="80" width="1720" height="920"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sof-9t-tkz">
-                                        <rect key="frame" x="0.0" y="497" width="427" height="86"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H A N G M A N" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-KK-iOa">
+                                        <rect key="frame" x="0.0" y="0.0" width="1720" height="114"/>
                                         <animations/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Easy"/>
-                                        <connections>
-                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Easy" id="A6P-7M-svF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-W6-S6P">
-                                        <rect key="frame" x="627" y="497" width="426" height="86"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="100"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greg Fiumara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7I-KH-GUj">
+                                        <rect key="frame" x="0.0" y="114" width="1720" height="29"/>
                                         <animations/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Medium"/>
-                                        <connections>
-                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Medium" id="zHi-Hf-1Vu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-IE-CH6">
-                                        <rect key="frame" x="1253" y="497" width="427" height="86"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="brv-jt-ScB">
+                                        <rect key="frame" x="0.0" y="143" width="1720" height="777"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sof-9t-tkz">
+                                                <rect key="frame" x="0.0" y="346" width="440" height="86"/>
+                                                <animations/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Easy"/>
+                                                <connections>
+                                                    <segue destination="Q3k-42-2N5" kind="show" identifier="Easy" id="A6P-7M-svF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-W6-S6P">
+                                                <rect key="frame" x="640" y="346" width="440" height="86"/>
+                                                <animations/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Medium"/>
+                                                <connections>
+                                                    <segue destination="Q3k-42-2N5" kind="show" identifier="Medium" id="zHi-Hf-1Vu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-IE-CH6">
+                                                <rect key="frame" x="1280" y="346" width="440" height="86"/>
+                                                <animations/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Hard"/>
+                                                <connections>
+                                                    <segue destination="Q3k-42-2N5" kind="show" identifier="Hard" id="Dnc-3M-DEh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Hard"/>
-                                        <connections>
-                                            <segue destination="Q3k-42-2N5" kind="show" identifier="Hard" id="Dnc-3M-DEh"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <animations/>
                             </stackView>
@@ -56,10 +76,10 @@
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="brv-jt-ScB" secondAttribute="bottom" id="cqw-CL-aLY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="brv-jt-ScB" secondAttribute="trailing" constant="100" id="k65-6j-P52"/>
-                            <constraint firstItem="brv-jt-ScB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="oYW-p6-S1x"/>
-                            <constraint firstItem="brv-jt-ScB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s2j-ud-kWP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3A3-nl-E64" secondAttribute="trailing" constant="80" id="Fzt-yd-IMA"/>
+                            <constraint firstItem="3A3-nl-E64" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="RIf-uV-WYi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3A3-nl-E64" secondAttribute="bottom" constant="80" id="X4N-3C-7rU"/>
+                            <constraint firstItem="3A3-nl-E64" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="zia-4Q-aVp"/>
                         </constraints>
                     </view>
                 </viewController>
