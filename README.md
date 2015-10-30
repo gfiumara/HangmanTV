@@ -7,6 +7,6 @@ to be a quick dive into Swift and the tvOS SDK.
 
 ![Hangman TV Screenshot](assets/screenshot.png)
 
-Wordlists are derived from [SWCOL](http://wordlist.aspell.net), maintained by
+Wordlists are derived from [SCOWL](http://wordlist.aspell.net), maintained by
 Kevin Atkinson.
 
