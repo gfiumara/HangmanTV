@@ -194,7 +194,7 @@ public class GallowsView : UIView
 		let winStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
 		winStyle.alignment = .Center
 
-		let winFontAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(200), NSForegroundColorAttributeName: UIColor.greenColor(), NSParagraphStyleAttributeName: winStyle]
+		let winFontAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(200), NSForegroundColorAttributeName: UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), NSParagraphStyleAttributeName: winStyle]
 
 		let winTextHeight: CGFloat = winTextContent.boundingRectWithSize(CGSizeMake(winRect.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: winFontAttributes, context: nil).size.height
 		CGContextSaveGState(context)
