@@ -762,7 +762,6 @@
 	<string>assess</string>
 	<string>assessor</string>
 	<string>assets</string>
-	<string>asshole</string>
 	<string>assign</string>
 	<string>assigner</string>
 	<string>assignor</string>
@@ -1033,7 +1032,6 @@
 	<string>barber</string>
 	<string>barberry</string>
 	<string>bardic</string>
-	<string>bareback</string>
 	<string>barefoot</string>
 	<string>barely</string>
 	<string>bareness</string>
@@ -1095,8 +1093,6 @@
 	<string>bassist</string>
 	<string>bassoon</string>
 	<string>basswood</string>
-	<string>bastard</string>
-	<string>bastardy</string>
 	<string>baster</string>
 	<string>bastion</string>
 	<string>bather</string>
@@ -1143,7 +1139,6 @@
 	<string>beastly</string>
 	<string>beatable</string>
 	<string>beaten</string>
-	<string>beater</string>
 	<string>beatific</string>
 	<string>beatify</string>
 	<string>beating</string>
@@ -1383,8 +1378,6 @@
 	<string>bismuth</string>
 	<string>bisque</string>
 	<string>bistro</string>
-	<string>bitchily</string>
-	<string>bitchy</string>
 	<string>biting</string>
 	<string>bitingly</string>
 	<string>bitten</string>
@@ -1520,7 +1513,6 @@
 	<string>bodega</string>
 	<string>bodice</string>
 	<string>bodied</string>
-	<string>bodily</string>
 	<string>bodkin</string>
 	<string>bodysuit</string>
 	<string>bodywork</string>
@@ -1544,7 +1536,6 @@
 	<string>bomber</string>
 	<string>bonanza</string>
 	<string>bonbon</string>
-	<string>bondage</string>
 	<string>bonding</string>
 	<string>bondman</string>
 	<string>bondsman</string>
@@ -1563,7 +1554,6 @@
 	<string>boogie</string>
 	<string>bookcase</string>
 	<string>bookend</string>
-	<string>bookie</string>
 	<string>booking</string>
 	<string>bookish</string>
 	<string>booklet</string>
@@ -1575,11 +1565,8 @@
 	<string>boonies</string>
 	<string>boorish</string>
 	<string>booster</string>
-	<string>bootee</string>
-	<string>bootie</string>
 	<string>bootleg</string>
 	<string>bootless</string>
-	<string>boozer</string>
 	<string>bordello</string>
 	<string>border</string>
 	<string>boredom</string>
@@ -1589,7 +1576,6 @@
 	<string>borrower</string>
 	<string>borscht</string>
 	<string>borzoi</string>
-	<string>bosomy</string>
 	<string>bossily</string>
 	<string>bossism</string>
 	<string>botanic</string>
@@ -1623,7 +1609,6 @@
 	<string>boutique</string>
 	<string>bouzouki</string>
 	<string>bovine</string>
-	<string>bowels</string>
 	<string>bowleg</string>
 	<string>bowler</string>
 	<string>bowlful</string>
@@ -1687,7 +1672,6 @@
 	<string>breaker</string>
 	<string>breakout</string>
 	<string>breakup</string>
-	<string>breast</string>
 	<string>breath</string>
 	<string>breathe</string>
 	<string>breather</string>
@@ -1805,7 +1789,6 @@
 	<string>buffoon</string>
 	<string>bugaboo</string>
 	<string>bugbear</string>
-	<string>bugger</string>
 	<string>bugler</string>
 	<string>builder</string>
 	<string>building</string>
@@ -1826,7 +1809,6 @@
 	<string>bullock</string>
 	<string>bullpen</string>
 	<string>bullring</string>
-	<string>bullshit</string>
 	<string>bulrush</string>
 	<string>bulwark</string>
 	<string>bulwarks</string>
@@ -1842,7 +1824,6 @@
 	<string>bundle</string>
 	<string>bungalow</string>
 	<string>bungee</string>
-	<string>bunghole</string>
 	<string>bungle</string>
 	<string>bungled</string>
 	<string>bungler</string>
@@ -2287,7 +2268,6 @@
 	<string>cerulean</string>
 	<string>cervical</string>
 	<string>cervices</string>
-	<string>cervix</string>
 	<string>cesarean</string>
 	<string>cesium</string>
 	<string>cession</string>
@@ -2588,8 +2568,6 @@
 	<string>clique</string>
 	<string>cliquey</string>
 	<string>cliquish</string>
-	<string>clitoral</string>
-	<string>clitoris</string>
 	<string>cloaca</string>
 	<string>cloacae</string>
 	<string>clobber</string>
@@ -2644,7 +2622,6 @@
 	<string>cobbler</string>
 	<string>cobweb</string>
 	<string>cobwebby</string>
-	<string>cocaine</string>
 	<string>coccus</string>
 	<string>coccyges</string>
 	<string>coccyx</string>
@@ -2704,8 +2681,6 @@
 	<string>coinage</string>
 	<string>coincide</string>
 	<string>coiner</string>
-	<string>coital</string>
-	<string>coitus</string>
 	<string>colander</string>
 	<string>coldly</string>
 	<string>coldness</string>
@@ -2776,7 +2751,6 @@
 	<string>commend</string>
 	<string>comment</string>
 	<string>commerce</string>
-	<string>commie</string>
 	<string>commit</string>
 	<string>commode</string>
 	<string>common</string>
@@ -2834,7 +2808,6 @@
 	<string>condense</string>
 	<string>condign</string>
 	<string>condole</string>
-	<string>condom</string>
 	<string>condone</string>
 	<string>condor</string>
 	<string>conduce</string>
@@ -3091,7 +3064,6 @@
 	<string>crabby</string>
 	<string>crablike</string>
 	<string>cracked</string>
-	<string>cracker</string>
 	<string>crackers</string>
 	<string>crackle</string>
 	<string>crackly</string>
@@ -3113,8 +3085,6 @@
 	<string>cranky</string>
 	<string>crannied</string>
 	<string>cranny</string>
-	<string>crappie</string>
-	<string>crappy</string>
 	<string>crassly</string>
 	<string>crater</string>
 	<string>cravat</string>
@@ -3385,11 +3355,6 @@
 	<string>damages</string>
 	<string>damaging</string>
 	<string>damask</string>
-	<string>dammit</string>
-	<string>damnable</string>
-	<string>damnably</string>
-	<string>damned</string>
-	<string>damning</string>
 	<string>dampen</string>
 	<string>dampener</string>
 	<string>damper</string>
@@ -3774,14 +3739,11 @@
 	<string>diatonic</string>
 	<string>diatribe</string>
 	<string>dibble</string>
-	<string>dicker</string>
-	<string>dickey</string>
 	<string>dictate</string>
 	<string>dictator</string>
 	<string>diction</string>
 	<string>dictum</string>
 	<string>didactic</string>
-	<string>diddle</string>
 	<string>diddler</string>
 	<string>diehard</string>
 	<string>diereses</string>
@@ -3817,13 +3779,11 @@
 	<string>dimple</string>
 	<string>dimpled</string>
 	<string>dimply</string>
-	<string>dimwit</string>
 	<string>dinette</string>
 	<string>dingbat</string>
 	<string>dingdong</string>
 	<string>dinghy</string>
 	<string>dingily</string>
-	<string>dingle</string>
 	<string>dingus</string>
 	<string>dinner</string>
 	<string>dinosaur</string>
@@ -4063,7 +4023,6 @@
 	<string>doubly</string>
 	<string>doubter</string>
 	<string>doubtful</string>
-	<string>douche</string>
 	<string>doughnut</string>
 	<string>doughty</string>
 	<string>doughy</string>
@@ -4611,9 +4570,6 @@
 	<string>eraser</string>
 	<string>erasure</string>
 	<string>erbium</string>
-	<string>erectile</string>
-	<string>erection</string>
-	<string>erectly</string>
 	<string>erector</string>
 	<string>erelong</string>
 	<string>eremite</string>
@@ -4621,8 +4577,6 @@
 	<string>erodible</string>
 	<string>erosion</string>
 	<string>erosive</string>
-	<string>erotic</string>
-	<string>erotica</string>
 	<string>errand</string>
 	<string>errant</string>
 	<string>errata</string>
@@ -4643,7 +4597,6 @@
 	<string>escargot</string>
 	<string>escarole</string>
 	<string>eschew</string>
-	<string>escort</string>
 	<string>escrow</string>
 	<string>esophagi</string>
 	<string>esoteric</string>
@@ -4686,7 +4639,6 @@
 	<string>eulogist</string>
 	<string>eulogize</string>
 	<string>eulogy</string>
-	<string>eunuch</string>
 	<string>euphony</string>
 	<string>euphoria</string>
 	<string>euphoric</string>
@@ -4851,7 +4803,6 @@
 	<string>faddish</string>
 	<string>faddist</string>
 	<string>faerie</string>
-	<string>faggot</string>
 	<string>fagoting</string>
 	<string>faience</string>
 	<string>failing</string>
@@ -4982,7 +4933,6 @@
 	<string>feldspar</string>
 	<string>felicity</string>
 	<string>feline</string>
-	<string>fellatio</string>
 	<string>fellow</string>
 	<string>felony</string>
 	<string>female</string>
@@ -5238,7 +5188,6 @@
 	<string>flogging</string>
 	<string>floodlit</string>
 	<string>flooring</string>
-	<string>floozy</string>
 	<string>floppily</string>
 	<string>floppy</string>
 	<string>floral</string>
@@ -5310,7 +5259,6 @@
 	<string>follower</string>
 	<string>foment</string>
 	<string>fondant</string>
-	<string>fondle</string>
 	<string>fondly</string>
 	<string>fondness</string>
 	<string>fondue</string>
@@ -5384,7 +5332,6 @@
 	<string>foresee</string>
 	<string>foreseen</string>
 	<string>foreseer</string>
-	<string>foreskin</string>
 	<string>forest</string>
 	<string>forested</string>
 	<string>forester</string>
@@ -5562,8 +5509,6 @@
 	<string>frumpy</string>
 	<string>frustum</string>
 	<string>fuchsia</string>
-	<string>fucker</string>
-	<string>fucking</string>
 	<string>fuddle</string>
 	<string>fuehrer</string>
 	<string>fugitive</string>
@@ -5768,7 +5713,6 @@
 	<string>genial</string>
 	<string>genially</string>
 	<string>genital</string>
-	<string>genitals</string>
 	<string>genitive</string>
 	<string>genius</string>
 	<string>genocide</string>
@@ -5817,7 +5761,6 @@
 	<string>giggle</string>
 	<string>giggler</string>
 	<string>giggly</string>
-	<string>gigolo</string>
 	<string>gilder</string>
 	<string>gilding</string>
 	<string>gimbals</string>
@@ -5924,7 +5867,6 @@
 	<string>goblet</string>
 	<string>goblin</string>
 	<string>godchild</string>
-	<string>goddamn</string>
 	<string>goddess</string>
 	<string>godhead</string>
 	<string>godhood</string>
@@ -6056,7 +5998,6 @@
 	<string>grimness</string>
 	<string>grinder</string>
 	<string>grinding</string>
-	<string>gringo</string>
 	<string>griper</string>
 	<string>gripes</string>
 	<string>grippe</string>
@@ -6266,7 +6207,6 @@
 	<string>harbor</string>
 	<string>hardback</string>
 	<string>hardball</string>
-	<string>hardcore</string>
 	<string>harden</string>
 	<string>hardener</string>
 	<string>hardhat</string>
@@ -6471,10 +6411,8 @@
 	<string>herniate</string>
 	<string>heroic</string>
 	<string>heroics</string>
-	<string>heroin</string>
 	<string>heroine</string>
 	<string>heroism</string>
-	<string>herpes</string>
 	<string>herring</string>
 	<string>herself</string>
 	<string>hesitant</string>
@@ -6607,9 +6545,7 @@
 	<string>hoodoo</string>
 	<string>hoodwink</string>
 	<string>hoofed</string>
-	<string>hookah</string>
 	<string>hooked</string>
-	<string>hooker</string>
 	<string>hookey</string>
 	<string>hookup</string>
 	<string>hookworm</string>
@@ -6617,7 +6553,6 @@
 	<string>hoopla</string>
 	<string>hooray</string>
 	<string>hoosegow</string>
-	<string>hooter</string>
 	<string>hooves</string>
 	<string>hopeful</string>
 	<string>hopeless</string>
@@ -6720,7 +6655,6 @@
 	<string>humorist</string>
 	<string>humorous</string>
 	<string>humpback</string>
-	<string>humped</string>
 	<string>hunched</string>
 	<string>hundred</string>
 	<string>hundreds</string>
@@ -6897,10 +6831,7 @@
 	<string>inboard</string>
 	<string>inborn</string>
 	<string>inbound</string>
-	<string>inbred</string>
-	<string>inbreed</string>
 	<string>incense</string>
-	<string>incest</string>
 	<string>inchoate</string>
 	<string>inchworm</string>
 	<string>incident</string>
@@ -7190,7 +7121,6 @@
 	<string>jabber</string>
 	<string>jabberer</string>
 	<string>jackal</string>
-	<string>jackass</string>
 	<string>jackboot</string>
 	<string>jackdaw</string>
 	<string>jacket</string>
@@ -7330,7 +7260,6 @@
 	<string>juniper</string>
 	<string>junker</string>
 	<string>junket</string>
-	<string>junkie</string>
 	<string>junkyard</string>
 	<string>jurist</string>
 	<string>juristic</string>
@@ -8367,7 +8296,6 @@
 	<string>meniscus</string>
 	<string>menorah</string>
 	<string>mensch</string>
-	<string>menses</string>
 	<string>menswear</string>
 	<string>mental</string>
 	<string>mentally</string>
@@ -8626,7 +8554,6 @@
 	<string>molecule</string>
 	<string>molehill</string>
 	<string>moleskin</string>
-	<string>molest</string>
 	<string>molester</string>
 	<string>mollify</string>
 	<string>mollusc</string>
@@ -8807,8 +8734,6 @@
 	<string>mundane</string>
 	<string>munition</string>
 	<string>muralist</string>
-	<string>murder</string>
-	<string>murderer</string>
 	<string>murkily</string>
 	<string>murmur</string>
 	<string>murmurer</string>
@@ -8887,7 +8812,6 @@
 	<string>nameless</string>
 	<string>namely</string>
 	<string>namesake</string>
-	<string>napalm</string>
 	<string>naphtha</string>
 	<string>napkin</string>
 	<string>napless</string>
@@ -9015,11 +8939,6 @@
 	<string>nicker</string>
 	<string>nickname</string>
 	<string>nicotine</string>
-	<string>niggard</string>
-	<string>nigger</string>
-	<string>niggle</string>
-	<string>niggler</string>
-	<string>niggling</string>
 	<string>nightcap</string>
 	<string>nightie</string>
 	<string>nightly</string>
@@ -9029,7 +8948,6 @@
 	<string>nimble</string>
 	<string>nimbly</string>
 	<string>nimbus</string>
-	<string>nimrod</string>
 	<string>ninepin</string>
 	<string>ninepins</string>
 	<string>nineteen</string>
@@ -9038,7 +8956,6 @@
 	<string>niobium</string>
 	<string>nipper</string>
 	<string>nippers</string>
-	<string>nipple</string>
 	<string>nirvana</string>
 	<string>nitpick</string>
 	<string>nitrate</string>
@@ -9141,9 +9058,6 @@
 	<string>nucleoli</string>
 	<string>nucleon</string>
 	<string>nucleus</string>
-	<string>nudism</string>
-	<string>nudist</string>
-	<string>nudity</string>
 	<string>nugatory</string>
 	<string>nugget</string>
 	<string>nuisance</string>
@@ -9331,7 +9245,6 @@
 	<string>operatic</string>
 	<string>operator</string>
 	<string>operetta</string>
-	<string>opiate</string>
 	<string>opinion</string>
 	<string>opossum</string>
 	<string>opponent</string>
@@ -9355,7 +9268,6 @@
 	<string>opulent</string>
 	<string>oracle</string>
 	<string>oracular</string>
-	<string>orally</string>
 	<string>orange</string>
 	<string>orangery</string>
 	<string>oration</string>
@@ -9384,8 +9296,6 @@
 	<string>organist</string>
 	<string>organize</string>
 	<string>organza</string>
-	<string>orgasm</string>
-	<string>orgasmic</string>
 	<string>orient</string>
 	<string>oriental</string>
 	<string>oriented</string>
@@ -9698,8 +9608,6 @@
 	<string>panpipes</string>
 	<string>pantheon</string>
 	<string>panther</string>
-	<string>pantie</string>
-	<string>panties</string>
 	<string>pantry</string>
 	<string>pantsuit</string>
 	<string>papacy</string>
@@ -9912,7 +9820,6 @@
 	<string>pending</string>
 	<string>pendulum</string>
 	<string>penguin</string>
-	<string>penile</string>
 	<string>penitent</string>
 	<string>penknife</string>
 	<string>penlight</string>
@@ -10000,11 +9907,8 @@
 	<string>petulant</string>
 	<string>petunia</string>
 	<string>pewter</string>
-	<string>peyote</string>
 	<string>phaeton</string>
 	<string>phalanx</string>
-	<string>phalli</string>
-	<string>phallic</string>
 	<string>phallus</string>
 	<string>phantasm</string>
 	<string>phantasy</string>
@@ -10129,7 +10033,6 @@
 	<string>pirogi</string>
 	<string>piroshki</string>
 	<string>pismire</string>
-	<string>pissed</string>
 	<string>pistil</string>
 	<string>pistol</string>
 	<string>piston</string>
@@ -10198,7 +10101,6 @@
 	<string>playback</string>
 	<string>playbill</string>
 	<string>playbook</string>
-	<string>playboy</string>
 	<string>player</string>
 	<string>playful</string>
 	<string>playgirl</string>
@@ -10925,7 +10827,6 @@
 	<string>rapids</string>
 	<string>rapier</string>
 	<string>rapine</string>
-	<string>rapist</string>
 	<string>rappel</string>
 	<string>rapper</string>
 	<string>rapport</string>
@@ -11076,12 +10977,10 @@
 	<string>recreate</string>
 	<string>recross</string>
 	<string>recruit</string>
-	<string>rectal</string>
 	<string>rectally</string>
 	<string>rectify</string>
 	<string>rector</string>
 	<string>rectory</string>
-	<string>rectum</string>
 	<string>recycle</string>
 	<string>recycled</string>
 	<string>redact</string>
@@ -11118,7 +11017,6 @@
 	<string>redwood</string>
 	<string>reecho</string>
 	<string>reedit</string>
-	<string>reefer</string>
 	<string>reelect</string>
 	<string>reembark</string>
 	<string>reembody</string>
@@ -11423,8 +11321,6 @@
 	<string>retainer</string>
 	<string>retake</string>
 	<string>retaken</string>
-	<string>retard</string>
-	<string>retarded</string>
 	<string>retarder</string>
 	<string>reteach</string>
 	<string>retell</string>
@@ -11762,8 +11658,6 @@
 	<string>sacrum</string>
 	<string>sadden</string>
 	<string>saddle</string>
-	<string>sadism</string>
-	<string>sadist</string>
 	<string>sadistic</string>
 	<string>sadness</string>
 	<string>safari</string>
@@ -11910,7 +11804,6 @@
 	<string>scandium</string>
 	<string>scanner</string>
 	<string>scansion</string>
-	<string>scantily</string>
 	<string>scantly</string>
 	<string>scanty</string>
 	<string>scapula</string>
@@ -11941,7 +11834,6 @@
 	<string>scherzo</string>
 	<string>schism</string>
 	<string>schist</string>
-	<string>schizo</string>
 	<string>schizoid</string>
 	<string>schlep</string>
 	<string>schlepp</string>
@@ -12009,7 +11901,6 @@
 	<string>scrooge</string>
 	<string>scrota</string>
 	<string>scrotal</string>
-	<string>scrotum</string>
 	<string>scrounge</string>
 	<string>scroungy</string>
 	<string>scrubber</string>
@@ -12052,7 +11943,6 @@
 	<string>sealed</string>
 	<string>sealer</string>
 	<string>sealskin</string>
-	<string>seaman</string>
 	<string>seamless</string>
 	<string>seance</string>
 	<string>seaplane</string>
@@ -12101,7 +11991,6 @@
 	<string>sedative</string>
 	<string>sediment</string>
 	<string>sedition</string>
-	<string>seduce</string>
 	<string>seducer</string>
 	<string>sedulous</string>
 	<string>seedbed</string>
@@ -12224,16 +12113,9 @@
 	<string>sewage</string>
 	<string>sewerage</string>
 	<string>sewing</string>
-	<string>sexily</string>
-	<string>sexiness</string>
-	<string>sexism</string>
-	<string>sexist</string>
-	<string>sexless</string>
-	<string>sexpot</string>
 	<string>sextant</string>
 	<string>sextet</string>
 	<string>sexton</string>
-	<string>sexual</string>
 	<string>sexually</string>
 	<string>shabbily</string>
 	<string>shabby</string>
@@ -12329,7 +12211,6 @@
 	<string>shirker</string>
 	<string>shirring</string>
 	<string>shirting</string>
-	<string>shitty</string>
 	<string>shiver</string>
 	<string>shivery</string>
 	<string>shocked</string>
@@ -12579,9 +12460,7 @@
 	<string>slavish</string>
 	<string>slayer</string>
 	<string>slaying</string>
-	<string>sleaze</string>
 	<string>sleazily</string>
-	<string>sleazy</string>
 	<string>sledder</string>
 	<string>sledge</string>
 	<string>sleekly</string>
@@ -12685,7 +12564,6 @@
 	<string>smuggler</string>
 	<string>smugly</string>
 	<string>smugness</string>
-	<string>smutty</string>
 	<string>snaffle</string>
 	<string>snapper</string>
 	<string>snappily</string>
@@ -12693,7 +12571,6 @@
 	<string>snappy</string>
 	<string>snapshot</string>
 	<string>snarly</string>
-	<string>snatch</string>
 	<string>snatcher</string>
 	<string>snazzily</string>
 	<string>snazzy</string>
@@ -12710,7 +12587,6 @@
 	<string>sniffles</string>
 	<string>snifter</string>
 	<string>snigger</string>
-	<string>sniper</string>
 	<string>snippet</string>
 	<string>snippy</string>
 	<string>snitch</string>
@@ -12764,9 +12640,6 @@
 	<string>sodden</string>
 	<string>soddenly</string>
 	<string>sodium</string>
-	<string>sodomite</string>
-	<string>sodomize</string>
-	<string>sodomy</string>
 	<string>soever</string>
 	<string>softball</string>
 	<string>soften</string>
@@ -12867,7 +12740,6 @@
 	<string>sourly</string>
 	<string>sourness</string>
 	<string>sourpuss</string>
-	<string>soused</string>
 	<string>southern</string>
 	<string>southpaw</string>
 	<string>souvenir</string>
@@ -13152,7 +13024,6 @@
 	<string>stealthy</string>
 	<string>steamer</string>
 	<string>steaming</string>
-	<string>steamy</string>
 	<string>steely</string>
 	<string>steepen</string>
 	<string>steeple</string>
@@ -13228,7 +13099,6 @@
 	<string>stolidly</string>
 	<string>stolon</string>
 	<string>stomach</string>
-	<string>stoned</string>
 	<string>stonily</string>
 	<string>stooge</string>
 	<string>stopcock</string>
@@ -13339,7 +13209,6 @@
 	<string>stumpy</string>
 	<string>stunning</string>
 	<string>stupefy</string>
-	<string>stupid</string>
 	<string>stupidly</string>
 	<string>stupor</string>
 	<string>sturdily</string>
@@ -13420,8 +13289,6 @@
 	<string>sugared</string>
 	<string>sugary</string>
 	<string>suggest</string>
-	<string>suicidal</string>
-	<string>suicide</string>
 	<string>suitable</string>
 	<string>suitably</string>
 	<string>suitcase</string>
@@ -13538,7 +13405,6 @@
 	<string>swankily</string>
 	<string>swanky</string>
 	<string>swarthy</string>
-	<string>swastika</string>
 	<string>swatch</string>
 	<string>swathe</string>
 	<string>swatter</string>
@@ -13563,7 +13429,6 @@
 	<string>swimsuit</string>
 	<string>swindle</string>
 	<string>swindler</string>
-	<string>swinger</string>
 	<string>swinging</string>
 	<string>swinish</string>
 	<string>swirly</string>
@@ -13667,7 +13532,6 @@
 	<string>tameness</string>
 	<string>tamper</string>
 	<string>tamperer</string>
-	<string>tampon</string>
 	<string>tanager</string>
 	<string>tanbark</string>
 	<string>tandem</string>
@@ -13734,7 +13598,6 @@
 	<string>tautness</string>
 	<string>tavern</string>
 	<string>tawdrily</string>
-	<string>tawdry</string>
 	<string>taxable</string>
 	<string>taxation</string>
 	<string>taxicab</string>
@@ -13840,11 +13703,8 @@
 	<string>testate</string>
 	<string>testator</string>
 	<string>tester</string>
-	<string>testes</string>
-	<string>testicle</string>
 	<string>testify</string>
 	<string>testily</string>
-	<string>testis</string>
 	<string>tetanus</string>
 	<string>tether</string>
 	<string>textbook</string>
@@ -13959,7 +13819,6 @@
 	<string>thrower</string>
 	<string>thrown</string>
 	<string>thrush</string>
-	<string>thrust</string>
 	<string>thruway</string>
 	<string>thuggery</string>
 	<string>thuggish</string>
@@ -14024,7 +13883,6 @@
 	<string>tininess</string>
 	<string>tinker</string>
 	<string>tinkerer</string>
-	<string>tinkle</string>
 	<string>tinnitus</string>
 	<string>tinplate</string>
 	<string>tinsel</string>
@@ -14109,7 +13967,6 @@
 	<string>topiary</string>
 	<string>topical</string>
 	<string>topknot</string>
-	<string>topless</string>
 	<string>topmast</string>
 	<string>topmost</string>
 	<string>topnotch</string>
@@ -14218,7 +14075,6 @@
 	<string>trapdoor</string>
 	<string>trapeze</string>
 	<string>trapper</string>
-	<string>trashy</string>
 	<string>trauma</string>
 	<string>traumata</string>
 	<string>travail</string>
@@ -14559,7 +14415,6 @@
 	<string>undersea</string>
 	<string>undertow</string>
 	<string>underway</string>
-	<string>undies</string>
 	<string>undimmed</string>
 	<string>undoing</string>
 	<string>undone</string>
@@ -14856,7 +14711,6 @@
 	<string>urgency</string>
 	<string>urgent</string>
 	<string>urgently</string>
-	<string>urinal</string>
 	<string>urinary</string>
 	<string>urinate</string>
 	<string>urology</string>
@@ -14872,7 +14726,6 @@
 	<string>usurper</string>
 	<string>utensil</string>
 	<string>uterine</string>
-	<string>uterus</string>
 	<string>utility</string>
 	<string>utilize</string>
 	<string>utmost</string>
@@ -14894,9 +14747,6 @@
 	<string>vacuum</string>
 	<string>vagabond</string>
 	<string>vagary</string>
-	<string>vagina</string>
-	<string>vaginae</string>
-	<string>vaginal</string>
 	<string>vagrancy</string>
 	<string>vagrant</string>
 	<string>vaguely</string>
@@ -15037,7 +14887,6 @@
 	<string>vibrant</string>
 	<string>vibrate</string>
 	<string>vibrato</string>
-	<string>vibrator</string>
 	<string>viburnum</string>
 	<string>vicarage</string>
 	<string>viceroy</string>
@@ -15080,7 +14929,6 @@
 	<string>violist</string>
 	<string>viperous</string>
 	<string>virago</string>
-	<string>virgin</string>
 	<string>virginal</string>
 	<string>virgule</string>
 	<string>virile</string>
@@ -15156,8 +15004,6 @@
 	<string>voyage</string>
 	<string>voyager</string>
 	<string>voyageur</string>
-	<string>voyeur</string>
-	<string>vulgar</string>
 	<string>vulgarly</string>
 	<string>vulpine</string>
 	<string>vulture</string>
@@ -15310,14 +15156,12 @@
 	<string>website</string>
 	<string>wedded</string>
 	<string>wedding</string>
-	<string>wedgie</string>
 	<string>wedlock</string>
 	<string>weeder</string>
 	<string>weedless</string>
 	<string>weekday</string>
 	<string>weekend</string>
 	<string>weekly</string>
-	<string>weenie</string>
 	<string>weensy</string>
 	<string>weeper</string>
 	<string>weeping</string>
@@ -15326,7 +15170,6 @@
 	<string>weighted</string>
 	<string>weighty</string>
 	<string>weirdly</string>
-	<string>weirdo</string>
 	<string>welcome</string>
 	<string>weldable</string>
 	<string>welder</string>
@@ -15340,7 +15183,6 @@
 	<string>westerly</string>
 	<string>western</string>
 	<string>westward</string>
-	<string>wetback</string>
 	<string>wetland</string>
 	<string>wetlands</string>
 	<string>wetness</string>
@@ -15399,7 +15241,6 @@
 	<string>whitener</string>
 	<string>whiteout</string>
 	<string>whites</string>
-	<string>whitey</string>
 	<string>whither</string>
 	<string>whiting</string>
 	<string>whitish</string>
@@ -15638,7 +15479,6 @@
 	<string>yearlong</string>
 	<string>yearly</string>
 	<string>yearning</string>
-	<string>yeasty</string>
 	<string>yellow</string>
 	<string>yellowy</string>
 	<string>yeoman</string>

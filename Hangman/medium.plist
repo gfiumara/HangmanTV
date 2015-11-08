@@ -1070,7 +1070,6 @@
 	<string>bespangle</string>
 	<string>bespatter</string>
 	<string>bespattered</string>
-	<string>bestiality</string>
 	<string>bestially</string>
 	<string>bestridden</string>
 	<string>bestseller</string>
@@ -1312,7 +1311,6 @@
 	<string>branchlike</string>
 	<string>brashness</string>
 	<string>brasserie</string>
-	<string>brassiere</string>
 	<string>brassiness</string>
 	<string>bratwurst</string>
 	<string>braveness</string>
@@ -1422,7 +1420,6 @@
 	<string>bullheaded</string>
 	<string>bullishly</string>
 	<string>bullishness</string>
-	<string>bullshitter</string>
 	<string>bumblebee</string>
 	<string>bumpiness</string>
 	<string>bumptious</string>
@@ -1991,7 +1988,6 @@
 	<string>cockleshell</string>
 	<string>cockroach</string>
 	<string>cockscomb</string>
-	<string>cocksucker</string>
 	<string>codependent</string>
 	<string>coeducation</string>
 	<string>coefficient</string>
@@ -2753,7 +2749,6 @@
 	<string>cummerbund</string>
 	<string>cumulative</string>
 	<string>cuneiform</string>
-	<string>cunnilingus</string>
 	<string>cunningly</string>
 	<string>curability</string>
 	<string>curatorial</string>
@@ -3523,8 +3518,6 @@
 	<string>domiciliary</string>
 	<string>dominance</string>
 	<string>dominantly</string>
-	<string>domination</string>
-	<string>dominatrix</string>
 	<string>domineering</string>
 	<string>donnybrook</string>
 	<string>doodlebug</string>
@@ -3714,10 +3707,6 @@
 	<string>eighteenth</string>
 	<string>eightieth</string>
 	<string>einsteinium</string>
-	<string>ejaculate</string>
-	<string>ejaculation</string>
-	<string>ejaculatory</string>
-	<string>elaborate</string>
 	<string>elaborately</string>
 	<string>elaboration</string>
 	<string>elastically</string>
@@ -3877,7 +3866,6 @@
 	<string>enjoyably</string>
 	<string>enjoyment</string>
 	<string>enlargeable</string>
-	<string>enlargement</string>
 	<string>enlighten</string>
 	<string>enlightened</string>
 	<string>enlistment</string>
@@ -4440,7 +4428,6 @@
 	<string>financier</string>
 	<string>financing</string>
 	<string>fingerboard</string>
-	<string>fingering</string>
 	<string>fingerling</string>
 	<string>fingernail</string>
 	<string>fingerprint</string>
@@ -4951,7 +4938,6 @@
 	<string>goalkeeping</string>
 	<string>goaltender</string>
 	<string>godchildren</string>
-	<string>goddammit</string>
 	<string>goddaughter</string>
 	<string>godfather</string>
 	<string>godforsaken</string>
@@ -6242,7 +6228,6 @@
 	<string>interceptor</string>
 	<string>intercessor</string>
 	<string>interchange</string>
-	<string>intercourse</string>
 	<string>interdict</string>
 	<string>interested</string>
 	<string>interesting</string>
@@ -6805,7 +6790,6 @@
 	<string>lovebirds</string>
 	<string>lovechild</string>
 	<string>loveliness</string>
-	<string>lovemaking</string>
 	<string>lowercase</string>
 	<string>lowermost</string>
 	<string>lowlander</string>
@@ -7001,7 +6985,6 @@
 	<string>masterwork</string>
 	<string>masticate</string>
 	<string>mastication</string>
-	<string>masturbate</string>
 	<string>matchbook</string>
 	<string>matchless</string>
 	<string>matchlock</string>
@@ -7106,8 +7089,6 @@
 	<string>menopausal</string>
 	<string>menopause</string>
 	<string>menservants</string>
-	<string>menstrual</string>
-	<string>menstruate</string>
 	<string>mensurable</string>
 	<string>mensuration</string>
 	<string>mentalist</string>
@@ -7831,7 +7812,6 @@
 	<string>nutritious</string>
 	<string>nutritive</string>
 	<string>nuttiness</string>
-	<string>nymphomania</string>
 	<string>oafishness</string>
 	<string>oarswoman</string>
 	<string>obbligato</string>
@@ -8372,9 +8352,7 @@
 	<string>pekingese</string>
 	<string>pendulous</string>
 	<string>penetrable</string>
-	<string>penetrate</string>
 	<string>penetrating</string>
-	<string>penetration</string>
 	<string>penetrative</string>
 	<string>penicillin</string>
 	<string>peninsula</string>
@@ -8526,7 +8504,6 @@
 	<string>pervasive</string>
 	<string>pervasively</string>
 	<string>perversely</string>
-	<string>perversion</string>
 	<string>perversity</string>
 	<string>perverted</string>
 	<string>peskiness</string>
@@ -8804,7 +8781,6 @@
 	<string>population</string>
 	<string>porcelain</string>
 	<string>porcupine</string>
-	<string>pornography</string>
 	<string>porousness</string>
 	<string>porphyritic</string>
 	<string>porringer</string>
@@ -9179,7 +9155,6 @@
 	<string>prostheses</string>
 	<string>prosthesis</string>
 	<string>prosthetic</string>
-	<string>prostitute</string>
 	<string>prostrate</string>
 	<string>prostration</string>
 	<string>protagonist</string>
@@ -11592,7 +11567,6 @@
 	<string>threatening</string>
 	<string>threefold</string>
 	<string>threescore</string>
-	<string>threesome</string>
 	<string>threshold</string>
 	<string>thriftily</string>
 	<string>thriftiness</string>
@@ -11784,7 +11758,6 @@
 	<string>transport</string>
 	<string>transporter</string>
 	<string>transpose</string>
-	<string>transsexual</string>
 	<string>transship</string>
 	<string>transverse</string>
 	<string>trapezium</string>
@@ -12548,7 +12521,6 @@
 	<string>vacuousness</string>
 	<string>vagabondage</string>
 	<string>vagarious</string>
-	<string>vaginally</string>
 	<string>vagueness</string>
 	<string>vainglory</string>
 	<string>valediction</string>
@@ -12869,7 +12841,6 @@
 	<string>wholesome</string>
 	<string>wholesomely</string>
 	<string>whomsoever</string>
-	<string>whorehouse</string>
 	<string>whosoever</string>
 	<string>wickedness</string>
 	<string>wickerwork</string>
