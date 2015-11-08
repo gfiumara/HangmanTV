@@ -29,18 +29,11 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greg Fiumara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7I-KH-GUj">
-                                        <rect key="frame" x="0.0" y="114" width="1720" height="29"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="25"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="brv-jt-ScB">
-                                        <rect key="frame" x="0.0" y="143" width="1720" height="777"/>
+                                        <rect key="frame" x="0.0" y="114" width="1720" height="806"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sof-9t-tkz">
-                                                <rect key="frame" x="0.0" y="346" width="440" height="86"/>
+                                                <rect key="frame" x="0.0" y="360" width="440" height="86"/>
                                                 <animations/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                                 <state key="normal" title="Easy"/>
@@ -49,7 +42,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-W6-S6P">
-                                                <rect key="frame" x="640" y="346" width="440" height="86"/>
+                                                <rect key="frame" x="640" y="360" width="440" height="86"/>
                                                 <animations/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                                 <state key="normal" title="Medium"/>
@@ -58,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-IE-CH6">
-                                                <rect key="frame" x="1280" y="346" width="440" height="86"/>
+                                                <rect key="frame" x="1280" y="360" width="440" height="86"/>
                                                 <animations/>
                                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                                 <state key="normal" title="Hard"/>
@@ -173,7 +166,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty: Medium" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-Kd-fWt">
-                                <rect key="frame" x="1699" y="1030" width="201" height="30"/>
+                                <rect key="frame" x="1669" y="1020" width="201" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,8 +180,8 @@
                             <constraint firstItem="HMW-ik-9Qu" firstAttribute="centerX" secondItem="94Q-Ow-pCu" secondAttribute="centerX" multiplier="1.25" id="8qG-g5-nrf"/>
                             <constraint firstItem="rvU-6L-FZw" firstAttribute="centerX" secondItem="HMW-ik-9Qu" secondAttribute="centerX" id="EQd-h3-dLF"/>
                             <constraint firstItem="Khb-4f-MWk" firstAttribute="bottom" secondItem="ysF-Vb-Z6p" secondAttribute="top" constant="8" symbolic="YES" id="GbU-bu-TTv"/>
-                            <constraint firstItem="ysF-Vb-Z6p" firstAttribute="top" secondItem="YeY-Kd-fWt" secondAttribute="bottom" constant="20" id="LD0-G8-Kzd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YeY-Kd-fWt" secondAttribute="trailing" id="c0Q-OO-a4C"/>
+                            <constraint firstItem="ysF-Vb-Z6p" firstAttribute="top" secondItem="YeY-Kd-fWt" secondAttribute="bottom" constant="30" id="LD0-G8-Kzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeY-Kd-fWt" secondAttribute="trailing" constant="30" id="c0Q-OO-a4C"/>
                             <constraint firstItem="Khb-4f-MWk" firstAttribute="top" secondItem="5SQ-Kk-OdX" secondAttribute="bottom" constant="8" symbolic="YES" id="cYY-pn-afj"/>
                             <constraint firstItem="rvU-6L-FZw" firstAttribute="top" secondItem="HMW-ik-9Qu" secondAttribute="bottom" constant="30" id="x0U-ud-vNd"/>
                             <constraint firstItem="Khb-4f-MWk" firstAttribute="trailing" secondItem="94Q-Ow-pCu" secondAttribute="centerXWithinMargins" multiplier="0.5" id="xDb-Fg-WTC"/>
