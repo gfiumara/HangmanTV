@@ -59,7 +59,7 @@ public class GallowsView : UIView
 	func decrementChances()
 	{
 		if (self.remainingChances > 0) {
-			self.remainingChances--
+			self.remainingChances -= 1
 		}
 
 		if (self.remainingChances == 0) {

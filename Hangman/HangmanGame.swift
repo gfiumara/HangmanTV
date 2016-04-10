@@ -123,7 +123,7 @@ public struct HangmanGame
 
 		let wordContainsGuess = self.word.characters.contains(letter)
 		if (!wordContainsGuess) {
-			self.remainingGuesses--
+			self.remainingGuesses -= 1
 		}
 		return (wordContainsGuess)
 	}
