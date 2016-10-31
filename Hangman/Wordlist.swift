@@ -15,8 +15,8 @@ public enum Difficulty:String
 
 public struct Wordlist
 {
-	private var wordlist:NSArray!
-	public private(set) var difficulty:Difficulty
+	fileprivate var wordlist:NSArray!
+	public fileprivate(set) var difficulty:Difficulty
 
 	public
 	init(difficulty:Difficulty)
@@ -25,18 +25,18 @@ public struct Wordlist
 		self.loadWordlist(difficulty);
 	}
 
-	private
+	fileprivate
 	mutating
-	func loadWordlist(difficulty:Difficulty)
+	func loadWordlist(_ difficulty:Difficulty)
 	{
 		var wordlistPath:String
 		switch (difficulty) {
 		case .Easy:
-			wordlistPath = NSBundle.mainBundle().pathForResource("easy", ofType:"plist")!
+			wordlistPath = Bundle.main.path(forResource: "easy", ofType:"plist")!
 		case .Medium:
-			wordlistPath = NSBundle.mainBundle().pathForResource("medium", ofType:"plist")!
+			wordlistPath = Bundle.main.path(forResource: "medium", ofType:"plist")!
 		case .Hard:
-			wordlistPath = NSBundle.mainBundle().pathForResource("hard", ofType:"plist")!
+			wordlistPath = Bundle.main.path(forResource: "hard", ofType:"plist")!
 		}
 
 		self.wordlist = NSArray(contentsOfFile:wordlistPath)
@@ -45,6 +45,6 @@ public struct Wordlist
 	public
 	func getWord() -> NSString
 	{
-		return self.wordlist.objectAtIndex(Int(arc4random_uniform(UInt32(self.wordlist.count)))).uppercaseString as NSString
+		return (self.wordlist.object(at: Int(arc4random_uniform(UInt32(self.wordlist.count)))) as AnyObject).uppercased as NSString
 	}
 }

@@ -163,6 +163,7 @@
 					08C2945B1BADC83800050048 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = SELUQ362Q4;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -323,6 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregfiumara.hangmantv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -338,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregfiumara.hangmantv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

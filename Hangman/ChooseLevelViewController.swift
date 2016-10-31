@@ -8,10 +8,10 @@ import UIKit
 
 class ChooseLevelViewController: UIViewController
 {
-	override func prepareForSegue(segue:UIStoryboardSegue, sender:AnyObject?)
+	override func prepare(for segue:UIStoryboardSegue, sender:Any?)
 	{
 		/* Choose difficulty based on segue identifier */
-		let vc:HMAGameViewController = segue.destinationViewController as! HMAGameViewController
+		let vc:HMAGameViewController = segue.destination as! HMAGameViewController
 		if segue.identifier == Difficulty.Medium.rawValue {
 			vc.difficulty = .Medium
 		} else if segue.identifier == Difficulty.Hard.rawValue {

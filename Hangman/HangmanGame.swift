@@ -10,11 +10,11 @@ import UIKit
 public struct HangmanGame
 {
 	/** Wordlist from which this game is based */
-	public private(set) var wordlist:Wordlist
+	public fileprivate(set) var wordlist:Wordlist
 	/** Array of letters that have been guessed */
-	private var guessedLetters:[Character] = []
+	fileprivate var guessedLetters:[Character] = []
 	/** The actual word that is being guessed */
-	public private(set) var word:String
+	public fileprivate(set) var word:String
 	/** Number of guesses that have been guessed */
 	public var numberOfGuesses:Int
 	{
@@ -29,7 +29,7 @@ public struct HangmanGame
 		get
 		{
 			var printableWord:String = ""
-			for (i, c) in self.word.characters.enumerate() {
+			for (i, c) in self.word.characters.enumerated() {
 				if self.guessedLetters.contains(c) {
 					printableWord += String(c)
 				} else {
@@ -50,7 +50,7 @@ public struct HangmanGame
 		get
 		{
 			var printableWord:String = ""
-			for (i, c) in self.word.characters.enumerate() {
+			for (i, c) in self.word.characters.enumerated() {
 				printableWord += String(c)
 				if i != (self.word.characters.count - 1) {
 					printableWord += " "
@@ -61,7 +61,7 @@ public struct HangmanGame
 		}
 	}
 	/** Number of guesses */
-	public private(set) var remainingGuesses = HMAConstants.Values.NumberOfChances;
+	public fileprivate(set) var remainingGuesses = HMAConstants.Values.NumberOfChances;
 	/** Whether or not the game is over */
 	public var gameOver:Bool
 	{
@@ -92,11 +92,11 @@ public struct HangmanGame
 		get
 		{
 			let coloredWord:NSMutableAttributedString = NSMutableAttributedString(string:self.printableWord)
-			for (i, c) in self.printableWord.characters.enumerate() {
+			for (i, c) in self.printableWord.characters.enumerated() {
 				if self.guessedLetters.contains(c) {
 					coloredWord.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), range:NSMakeRange(i, 1))
 				} else {
-					coloredWord.addAttribute(NSForegroundColorAttributeName, value:UIColor.redColor(), range:NSMakeRange(i, 1))
+					coloredWord.addAttribute(NSForegroundColorAttributeName, value:UIColor.red, range:NSMakeRange(i, 1))
 				}
 			}
 
@@ -113,7 +113,7 @@ public struct HangmanGame
 
 	public
 	mutating
-	func guessLetter(letter:Character) -> Bool
+	func guessLetter(_ letter:Character) -> Bool
 	{
 		if (self.remainingGuesses <= 0) {
 			return (false)

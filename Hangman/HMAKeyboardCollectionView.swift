@@ -8,7 +8,7 @@ import UIKit
 
 class HMAKeyboardCollectionView : UICollectionView
 {
-	var usedIndexPaths:[NSIndexPath] = [NSIndexPath]()
+	var usedIndexPaths:[IndexPath] = [IndexPath]()
 
 	required init?(coder aDecoder:NSCoder)
 	{
@@ -19,19 +19,19 @@ class HMAKeyboardCollectionView : UICollectionView
 
 extension HMAKeyboardCollectionView : UICollectionViewDataSource
 {
-	func collectionView(collectionView:UICollectionView, numberOfItemsInSection section:Int) -> Int
+	func collectionView(_ collectionView:UICollectionView, numberOfItemsInSection section:Int) -> Int
 	{
 		return (26)
 	}
 
-	func collectionView(collectionView:UICollectionView, cellForItemAtIndexPath indexPath:NSIndexPath) -> UICollectionViewCell
+	func collectionView(_ collectionView:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
 	{
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HMAConstants.Identifiers.KeyboardCellID, forIndexPath:indexPath) as! HMAKeyboardCollectionViewCell
-		cell.label.text = UnicodeScalar(HMAConstants.Values.UnicodeA + indexPath.row).escape(asASCII:true)
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HMAConstants.Identifiers.KeyboardCellID, for:indexPath) as! HMAKeyboardCollectionViewCell
+		cell.label.text = UnicodeScalar(HMAConstants.Values.UnicodeA + indexPath.row)?.escaped(asASCII:true)
 		cell.button.tag = (HMAConstants.Values.UnicodeA + indexPath.row)
 
-		cell.button.setTitleColor(UIColor.blackColor(), forState:.Focused)
-		cell.button.setTitleColor(UIColor.lightGrayColor(), forState:.Disabled)
+		cell.button.setTitleColor(UIColor.black, for:.focused)
+		cell.button.setTitleColor(UIColor.lightGray, for:.disabled)
 		
 		return (cell)
 	}

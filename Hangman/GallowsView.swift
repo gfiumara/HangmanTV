@@ -6,21 +6,21 @@
 
 import UIKit
 
-public class GallowsView : UIView
+open class GallowsView : UIView
 {
-	public var remainingChances:UInt8 = HMAConstants.Values.NumberOfChances
+	open var remainingChances:UInt8 = HMAConstants.Values.NumberOfChances
 	{
 		didSet
 		{
 			self.setNeedsDisplay()
 		}
 	}
-	public var gameLost:Bool = false
-	public var gameWon:Bool = false
+	open var gameLost:Bool = false
+	open var gameWon:Bool = false
 
 	override
-	public
-	func drawRect(rect: CGRect)
+	open
+	func draw(_ rect: CGRect)
 	{
 		self.drawGallows()
 
@@ -55,7 +55,7 @@ public class GallowsView : UIView
 		}
 	}
 
-	public
+	open
 	func decrementChances()
 	{
 		if (self.remainingChances > 0) {
@@ -67,139 +67,139 @@ public class GallowsView : UIView
 		}
 	}
 
-	private
+	fileprivate
 	func drawGallows()
 	{
-		UIColor.brownColor().setFill()
+		UIColor.brown.setFill()
 
-		let ground = UIBezierPath(rect: CGRectMake(40, 0, 20, 800))
+		let ground = UIBezierPath(rect: CGRect(x: 40, y: 0, width: 20, height: 800))
 		ground.fill()
 
-		let leftSide = UIBezierPath(rect: CGRectMake(0, 780, 100, 20))
+		let leftSide = UIBezierPath(rect: CGRect(x: 0, y: 780, width: 100, height: 20))
 		leftSide.fill()
 
-		let nooseHolder = UIBezierPath(rect: CGRectMake(40, 0, 400, 20))
+		let nooseHolder = UIBezierPath(rect: CGRect(x: 40, y: 0, width: 400, height: 20))
 		nooseHolder.fill()
 
-		let noose = UIBezierPath(rect: CGRectMake(420, 0, 20, 100))
+		let noose = UIBezierPath(rect: CGRect(x: 420, y: 0, width: 20, height: 100))
 		noose.fill()
 	}
 
-	private
+	fileprivate
 	func drawHead()
 	{
-		let ovalPath = UIBezierPath(ovalInRect: CGRectMake(355, 100, 150, 150))
-		UIColor.grayColor().setFill()
+		let ovalPath = UIBezierPath(ovalIn: CGRect(x: 355, y: 100, width: 150, height: 150))
+		UIColor.gray.setFill()
 		ovalPath.fill()
 	}
 
-	private
+	fileprivate
 	func drawChest()
 	{
-		let rectangle5Path = UIBezierPath(rect: CGRectMake(420, 250, 20, 300))
-		UIColor.grayColor().setFill()
+		let rectangle5Path = UIBezierPath(rect: CGRect(x: 420, y: 250, width: 20, height: 300))
+		UIColor.gray.setFill()
 		rectangle5Path.fill()
 	}
 
-	private
+	fileprivate
 	func drawRightArm()
 	{
 		let bezierPath = UIBezierPath()
-		bezierPath.moveToPoint(CGPointMake(436, 400))
-		bezierPath.addLineToPoint(CGPointMake(562, 274))
-		bezierPath.lineCapStyle = .Round;
+		bezierPath.move(to: CGPoint(x: 436, y: 400))
+		bezierPath.addLine(to: CGPoint(x: 562, y: 274))
+		bezierPath.lineCapStyle = .round;
 
-		bezierPath.lineJoinStyle = .Round;
+		bezierPath.lineJoinStyle = .round;
 
-		UIColor.grayColor().setStroke()
+		UIColor.gray.setStroke()
 		bezierPath.lineWidth = 20
 		bezierPath.stroke()
 	}
 
-	private
+	fileprivate
 	func drawLeftArm()
 	{
 		let bezier2Path = UIBezierPath()
-		bezier2Path.moveToPoint(CGPointMake(424, 400))
-		bezier2Path.addLineToPoint(CGPointMake(298, 274))
-		bezier2Path.lineCapStyle = .Round;
+		bezier2Path.move(to: CGPoint(x: 424, y: 400))
+		bezier2Path.addLine(to: CGPoint(x: 298, y: 274))
+		bezier2Path.lineCapStyle = .round;
 
-		bezier2Path.lineJoinStyle = .Round;
+		bezier2Path.lineJoinStyle = .round;
 
-		UIColor.grayColor().setStroke()
+		UIColor.gray.setStroke()
 		bezier2Path.lineWidth = 20
 		bezier2Path.stroke()
 	}
 
-	private
+	fileprivate
 	func drawLeftLeg()
 	{
 		let bezier3Path = UIBezierPath()
-		bezier3Path.moveToPoint(CGPointMake(428, 546))
-		bezier3Path.addLineToPoint(CGPointMake(302, 672))
-		bezier3Path.lineCapStyle = .Round;
+		bezier3Path.move(to: CGPoint(x: 428, y: 546))
+		bezier3Path.addLine(to: CGPoint(x: 302, y: 672))
+		bezier3Path.lineCapStyle = .round;
 
-		bezier3Path.lineJoinStyle = .Round;
+		bezier3Path.lineJoinStyle = .round;
 
-		UIColor.grayColor().setStroke()
+		UIColor.gray.setStroke()
 		bezier3Path.lineWidth = 20
 		bezier3Path.stroke()
 	}
 
-	private
+	fileprivate
 	func drawRightLeg()
 	{
 		let bezier4Path = UIBezierPath()
-		bezier4Path.moveToPoint(CGPointMake(432, 546))
-		bezier4Path.addLineToPoint(CGPointMake(558, 672))
-		bezier4Path.lineCapStyle = .Round;
+		bezier4Path.move(to: CGPoint(x: 432, y: 546))
+		bezier4Path.addLine(to: CGPoint(x: 558, y: 672))
+		bezier4Path.lineCapStyle = .round;
 
-		bezier4Path.lineJoinStyle = .Round;
+		bezier4Path.lineJoinStyle = .round;
 
-		UIColor.grayColor().setStroke()
+		UIColor.gray.setStroke()
 		bezier4Path.lineWidth = 20
 		bezier4Path.stroke()
 	}
 
-	private
+	fileprivate
 	func drawGameOver()
 	{
 		//// General Declarations
 		let context = UIGraphicsGetCurrentContext()
 
 		//// Game Over Drawing
-		let gameOverRect = CGRectMake(0, 0, 800, 800)
+		let gameOverRect = CGRect(x: 0, y: 0, width: 800, height: 800)
 		let gameOverTextContent = NSString(string: "GAME\nOVER")
-		let gameOverStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-		gameOverStyle.alignment = .Center
+		let gameOverStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+		gameOverStyle.alignment = .center
 
-		let gameOverFontAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(200), NSForegroundColorAttributeName: UIColor.redColor(), NSParagraphStyleAttributeName: gameOverStyle]
+		let gameOverFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 200), NSForegroundColorAttributeName: UIColor.red, NSParagraphStyleAttributeName: gameOverStyle]
 
-		let gameOverTextHeight: CGFloat = gameOverTextContent.boundingRectWithSize(CGSizeMake(gameOverRect.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: gameOverFontAttributes, context: nil).size.height
-		CGContextSaveGState(context)
-		CGContextClipToRect(context, gameOverRect);
-		gameOverTextContent.drawInRect(CGRectMake(gameOverRect.minX, gameOverRect.minY + (gameOverRect.height - gameOverTextHeight) / 2, gameOverRect.width, gameOverTextHeight), withAttributes: gameOverFontAttributes)
-		CGContextRestoreGState(context)
+		let gameOverTextHeight: CGFloat = gameOverTextContent.boundingRect(with: CGSize(width: gameOverRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: gameOverFontAttributes, context: nil).size.height
+		context?.saveGState()
+		context?.clip(to: gameOverRect);
+		gameOverTextContent.draw(in: CGRect(x: gameOverRect.minX, y: gameOverRect.minY + (gameOverRect.height - gameOverTextHeight) / 2, width: gameOverRect.width, height: gameOverTextHeight), withAttributes: gameOverFontAttributes)
+		context?.restoreGState()
 	}
 
-	private
+	fileprivate
 	func drawGameWon()
 	{
 		//// General Declarations
 		let context = UIGraphicsGetCurrentContext()
 
 		//// win Drawing
-		let winRect = CGRectMake(0, 0, 800, 800)
+		let winRect = CGRect(x: 0, y: 0, width: 800, height: 800)
 		let winTextContent = NSString(string: "WIN!")
-		let winStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-		winStyle.alignment = .Center
+		let winStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+		winStyle.alignment = .center
 
-		let winFontAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(200), NSForegroundColorAttributeName: UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), NSParagraphStyleAttributeName: winStyle]
+		let winFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 200), NSForegroundColorAttributeName: UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), NSParagraphStyleAttributeName: winStyle]
 
-		let winTextHeight: CGFloat = winTextContent.boundingRectWithSize(CGSizeMake(winRect.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: winFontAttributes, context: nil).size.height
-		CGContextSaveGState(context)
-		CGContextClipToRect(context, winRect);
-		winTextContent.drawInRect(CGRectMake(winRect.minX, winRect.minY + (winRect.height - winTextHeight) / 2, winRect.width, winTextHeight), withAttributes: winFontAttributes)
-		CGContextRestoreGState(context)
+		let winTextHeight: CGFloat = winTextContent.boundingRect(with: CGSize(width: winRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: winFontAttributes, context: nil).size.height
+		context?.saveGState()
+		context?.clip(to: winRect);
+		winTextContent.draw(in: CGRect(x: winRect.minX, y: winRect.minY + (winRect.height - winTextHeight) / 2, width: winRect.width, height: winTextHeight), withAttributes: winFontAttributes)
+		context?.restoreGState()
 	}
 }
