@@ -94,9 +94,9 @@ public struct HangmanGame
 			let coloredWord:NSMutableAttributedString = NSMutableAttributedString(string:self.printableWord)
 			for (i, c) in self.printableWord.characters.enumerated() {
 				if self.guessedLetters.contains(c) {
-					coloredWord.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), range:NSMakeRange(i, 1))
+					coloredWord.addAttribute(NSAttributedString.Key.foregroundColor, value:UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), range:NSMakeRange(i, 1))
 				} else {
-					coloredWord.addAttribute(NSForegroundColorAttributeName, value:UIColor.red, range:NSMakeRange(i, 1))
+					coloredWord.addAttribute(NSAttributedString.Key.foregroundColor, value:UIColor.red, range:NSMakeRange(i, 1))
 				}
 			}
 

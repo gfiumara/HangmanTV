@@ -173,12 +173,12 @@ open class GallowsView : UIView
 		let gameOverStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
 		gameOverStyle.alignment = .center
 
-		let gameOverFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 200), NSForegroundColorAttributeName: UIColor.red, NSParagraphStyleAttributeName: gameOverStyle]
+		let gameOverFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.red, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): gameOverStyle]
 
-		let gameOverTextHeight: CGFloat = gameOverTextContent.boundingRect(with: CGSize(width: gameOverRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: gameOverFontAttributes, context: nil).size.height
+		let gameOverTextHeight: CGFloat = gameOverTextContent.boundingRect(with: CGSize(width: gameOverRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: convertToOptionalNSAttributedStringKeyDictionary(gameOverFontAttributes), context: nil).size.height
 		context?.saveGState()
 		context?.clip(to: gameOverRect);
-		gameOverTextContent.draw(in: CGRect(x: gameOverRect.minX, y: gameOverRect.minY + (gameOverRect.height - gameOverTextHeight) / 2, width: gameOverRect.width, height: gameOverTextHeight), withAttributes: gameOverFontAttributes)
+		gameOverTextContent.draw(in: CGRect(x: gameOverRect.minX, y: gameOverRect.minY + (gameOverRect.height - gameOverTextHeight) / 2, width: gameOverRect.width, height: gameOverTextHeight), withAttributes: convertToOptionalNSAttributedStringKeyDictionary(gameOverFontAttributes))
 		context?.restoreGState()
 	}
 
@@ -194,12 +194,23 @@ open class GallowsView : UIView
 		let winStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
 		winStyle.alignment = .center
 
-		let winFontAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 200), NSForegroundColorAttributeName: UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), NSParagraphStyleAttributeName: winStyle]
+		let winFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): winStyle]
 
-		let winTextHeight: CGFloat = winTextContent.boundingRect(with: CGSize(width: winRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: winFontAttributes, context: nil).size.height
+		let winTextHeight: CGFloat = winTextContent.boundingRect(with: CGSize(width: winRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: convertToOptionalNSAttributedStringKeyDictionary(winFontAttributes), context: nil).size.height
 		context?.saveGState()
 		context?.clip(to: winRect);
-		winTextContent.draw(in: CGRect(x: winRect.minX, y: winRect.minY + (winRect.height - winTextHeight) / 2, width: winRect.width, height: winTextHeight), withAttributes: winFontAttributes)
+		winTextContent.draw(in: CGRect(x: winRect.minX, y: winRect.minY + (winRect.height - winTextHeight) / 2, width: winRect.width, height: winTextHeight), withAttributes: convertToOptionalNSAttributedStringKeyDictionary(winFontAttributes))
 		context?.restoreGState()
 	}
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }
