@@ -29,14 +29,14 @@ public struct HangmanGame
 		get
 		{
 			var printableWord:String = ""
-			for (i, c) in self.word.characters.enumerated() {
+			for (i, c) in self.word.enumerated() {
 				if self.guessedLetters.contains(c) {
 					printableWord += String(c)
 				} else {
 					printableWord += String(HMAConstants.Values.UnguessedCharacter)
 				}
 
-				if i != (self.word.characters.count - 1) {
+				if i != (self.word.count - 1) {
 					printableWord += " "
 				}
 			}
@@ -50,9 +50,9 @@ public struct HangmanGame
 		get
 		{
 			var printableWord:String = ""
-			for (i, c) in self.word.characters.enumerated() {
+			for (i, c) in self.word.enumerated() {
 				printableWord += String(c)
-				if i != (self.word.characters.count - 1) {
+				if i != (self.word.count - 1) {
 					printableWord += " "
 				}
 			}
@@ -75,7 +75,7 @@ public struct HangmanGame
 	{
 		get
 		{
-			return ((!self.printableGuessedWord.characters.contains(HMAConstants.Values.UnguessedCharacter)) &&
+			return ((!self.printableGuessedWord.contains(HMAConstants.Values.UnguessedCharacter)) &&
 				(!self.gameLost))
 		}
 	}
@@ -92,7 +92,7 @@ public struct HangmanGame
 		get
 		{
 			let coloredWord:NSMutableAttributedString = NSMutableAttributedString(string:self.printableWord)
-			for (i, c) in self.printableWord.characters.enumerated() {
+			for (i, c) in self.printableWord.enumerated() {
 				if self.guessedLetters.contains(c) {
 					coloredWord.addAttribute(NSAttributedString.Key.foregroundColor, value:UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), range:NSMakeRange(i, 1))
 				} else {
@@ -121,7 +121,7 @@ public struct HangmanGame
 
 		self.guessedLetters.append(letter)
 
-		let wordContainsGuess = self.word.characters.contains(letter)
+		let wordContainsGuess = self.word.contains(letter)
 		if (!wordContainsGuess) {
 			self.remainingGuesses -= 1
 		}

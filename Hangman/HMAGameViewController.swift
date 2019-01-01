@@ -46,7 +46,7 @@ open class HMAGameViewController: UIViewController
 
 		/* Guess the letter */
 		if let guessedLetter = UnicodeScalar(sender.tag) {
-			let _ = self.game.guessLetter(guessedLetter.escaped(asASCII:true).characters.first!)
+			let _ = self.game.guessLetter(guessedLetter.escaped(asASCII:true).first!)
 
 			/* Update labels */
 			self.updateDifficultyLabel()
