@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "tv",
+      "filename" : "bodyLayer.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
