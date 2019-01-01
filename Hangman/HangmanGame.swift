@@ -1,6 +1,6 @@
 /*
  * HangmanGame.swift
- * Part of http://github.com/gfiumara/HangmanTV by Gregory Fiumara.
+ * Part of https://github.com/gfiumara/HangmanTV by Gregory Fiumara.
  * See LICENSE for details.
  */
 
