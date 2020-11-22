@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5vW-jP-AIo">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Level View Controller-->
+        <scene sceneID="a4Q-LX-BY5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qW-VM-hdn" sceneMemberID="firstResponder"/>
+                <viewController id="5vW-jP-AIo" customClass="ChooseLevelViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X0y-Dd-M1K"/>
+                        <viewControllerLayoutGuide type="bottom" id="O1I-gP-d4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7L3-wn-BYT">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p8s-iu-1gY">
+                                <rect key="frame" x="176" y="140" width="1568" height="800"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJP-qF-Zdd">
+                                        <rect key="frame" x="0.0" y="0.0" width="1568" height="114"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="OWF-a9-T7I">
+                                        <rect key="frame" x="0.0" y="114" width="1568" height="686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-9G-I8G">
+                                                <rect key="frame" x="0.0" y="300" width="389.5" height="86"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVJ-Kj-lpx">
+                                                <rect key="frame" x="589.5" y="300" width="389" height="86"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFZ-Q1-s0s">
+                                                <rect key="frame" x="1178.5" y="300" width="389.5" height="86"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9v1-RP-5Ao"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9v1-RP-5Ao" firstAttribute="bottom" secondItem="p8s-iu-1gY" secondAttribute="bottom" constant="80" id="9bd-5T-kDN"/>
+                            <constraint firstItem="p8s-iu-1gY" firstAttribute="leading" secondItem="9v1-RP-5Ao" secondAttribute="leading" constant="96" id="DRj-pg-g1x"/>
+                            <constraint firstItem="p8s-iu-1gY" firstAttribute="top" secondItem="9v1-RP-5Ao" secondAttribute="top" constant="80" id="qiM-Ot-aQs"/>
+                            <constraint firstItem="9v1-RP-5Ao" firstAttribute="trailing" secondItem="p8s-iu-1gY" secondAttribute="trailing" constant="96" id="z08-WM-YZi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="104" y="-1034"/>
+        </scene>
+    </scenes>
+</document>

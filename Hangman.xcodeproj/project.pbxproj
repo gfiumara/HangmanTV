@@ -12,6 +12,7 @@
 		0840B6261BCAF6E8002BDF16 /* medium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0840B6231BCAF6E8002BDF16 /* medium.plist */; };
 		0840B6281BCAF776002BDF16 /* Wordlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B6271BCAF776002BDF16 /* Wordlist.swift */; };
 		0840B62A1BCBE4A4002BDF16 /* HangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0840B6291BCBE4A4002BDF16 /* HangmanGame.swift */; };
+		0862B032256B18E0002C47C6 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0862B030256B18E0002C47C6 /* LaunchStoryboard.storyboard */; };
 		08B4C41D1BC49740005676A4 /* GallowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B4C41C1BC49740005676A4 /* GallowsView.swift */; };
 		08C294601BADC83800050048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2945F1BADC83800050048 /* AppDelegate.swift */; };
 		08C294621BADC83800050048 /* ChooseLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C294611BADC83800050048 /* ChooseLevelViewController.swift */; };
@@ -29,6 +30,7 @@
 		0840B6231BCAF6E8002BDF16 /* medium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = medium.plist; sourceTree = "<group>"; };
 		0840B6271BCAF776002BDF16 /* Wordlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wordlist.swift; sourceTree = "<group>"; };
 		0840B6291BCBE4A4002BDF16 /* HangmanGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanGame.swift; sourceTree = "<group>"; };
+		0862B031256B18E0002C47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		08B4C41C1BC49740005676A4 /* GallowsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GallowsView.swift; sourceTree = "<group>"; };
 		08C2945C1BADC83800050048 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C2945F1BADC83800050048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				08C294701BADEDA500050048 /* Constants.swift */,
 				08C294681BADC83800050048 /* Info.plist */,
 				08C294631BADC83800050048 /* Main.storyboard */,
+				0862B030256B18E0002C47C6 /* LaunchStoryboard.storyboard */,
 				0840B6201BCAF6DE002BDF16 /* Wordlists */,
 			);
 			name = Resources;
@@ -195,6 +198,7 @@
 				0840B6261BCAF6E8002BDF16 /* medium.plist in Resources */,
 				0840B6241BCAF6E8002BDF16 /* easy.plist in Resources */,
 				08C294651BADC83800050048 /* Main.storyboard in Resources */,
+				0862B032256B18E0002C47C6 /* LaunchStoryboard.storyboard in Resources */,
 				0840B6251BCAF6E8002BDF16 /* hard.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +225,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0862B030256B18E0002C47C6 /* LaunchStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0862B031256B18E0002C47C6 /* Base */,
+			);
+			name = LaunchStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		08C294631BADC83800050048 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
