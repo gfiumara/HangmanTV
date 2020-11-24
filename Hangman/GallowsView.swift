@@ -89,7 +89,7 @@ open class GallowsView : UIView
 	func drawHead()
 	{
 		let ovalPath = UIBezierPath(ovalIn: CGRect(x: 355, y: 100, width: 150, height: 150))
-		UIColor.gray.setFill()
+		UIColor.systemGray.setFill()
 		ovalPath.fill()
 	}
 
@@ -97,7 +97,7 @@ open class GallowsView : UIView
 	func drawChest()
 	{
 		let rectangle5Path = UIBezierPath(rect: CGRect(x: 420, y: 250, width: 20, height: 300))
-		UIColor.gray.setFill()
+		UIColor.systemGray.setFill()
 		rectangle5Path.fill()
 	}
 
@@ -111,7 +111,7 @@ open class GallowsView : UIView
 
 		bezierPath.lineJoinStyle = .round;
 
-		UIColor.gray.setStroke()
+		UIColor.systemGray.setStroke()
 		bezierPath.lineWidth = 20
 		bezierPath.stroke()
 	}
@@ -126,7 +126,7 @@ open class GallowsView : UIView
 
 		bezier2Path.lineJoinStyle = .round;
 
-		UIColor.gray.setStroke()
+		UIColor.systemGray.setStroke()
 		bezier2Path.lineWidth = 20
 		bezier2Path.stroke()
 	}
@@ -141,7 +141,7 @@ open class GallowsView : UIView
 
 		bezier3Path.lineJoinStyle = .round;
 
-		UIColor.gray.setStroke()
+		UIColor.systemGray.setStroke()
 		bezier3Path.lineWidth = 20
 		bezier3Path.stroke()
 	}
@@ -156,7 +156,7 @@ open class GallowsView : UIView
 
 		bezier4Path.lineJoinStyle = .round;
 
-		UIColor.gray.setStroke()
+		UIColor.systemGray.setStroke()
 		bezier4Path.lineWidth = 20
 		bezier4Path.stroke()
 	}
@@ -173,7 +173,7 @@ open class GallowsView : UIView
 		let gameOverStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
 		gameOverStyle.alignment = .center
 
-		let gameOverFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.red, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): gameOverStyle]
+		let gameOverFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.systemRed, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): gameOverStyle]
 
 		let gameOverTextHeight: CGFloat = gameOverTextContent.boundingRect(with: CGSize(width: gameOverRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: convertToOptionalNSAttributedStringKeyDictionary(gameOverFontAttributes), context: nil).size.height
 		context?.saveGState()
@@ -194,7 +194,7 @@ open class GallowsView : UIView
 		let winStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
 		winStyle.alignment = .center
 
-		let winFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor(red:0.36, green:0.76, blue:0.32, alpha:1.0), convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): winStyle]
+		let winFontAttributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 200), convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): UIColor.systemGreen, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): winStyle]
 
 		let winTextHeight: CGFloat = winTextContent.boundingRect(with: CGSize(width: winRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: convertToOptionalNSAttributedStringKeyDictionary(winFontAttributes), context: nil).size.height
 		context?.saveGState()

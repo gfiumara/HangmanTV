@@ -40,7 +40,7 @@ open class HMAGameViewController: UIViewController
 	@IBAction func keyboardButtonPressed(_ sender:UIButton)
 	{
 		let cell:HMAKeyboardCollectionViewCell? = keyboardView.cellForItem(at: IndexPath(row:sender.tag - HMAConstants.Values.UnicodeA, section:0)) as! HMAKeyboardCollectionViewCell?
-		cell?.label.textColor = UIColor.lightGray
+		cell?.label.textColor = UIColor.systemGray
 		cell?.button.isEnabled = false
 		cell?.isUserInteractionEnabled = false
 
