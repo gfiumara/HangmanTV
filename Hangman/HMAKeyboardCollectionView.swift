@@ -30,9 +30,9 @@ extension HMAKeyboardCollectionView : UICollectionViewDataSource
 		cell.label.text = UnicodeScalar(HMAConstants.Values.UnicodeA + indexPath.row)?.escaped(asASCII:true)
 		cell.button.tag = (HMAConstants.Values.UnicodeA + indexPath.row)
 
-		cell.button.setTitleColor(UIColor.black, for:.focused)
-		cell.button.setTitleColor(UIColor.lightGray, for:.disabled)
-		
+		cell.button.setBackgroundImage(nil, for:.disabled)
+		cell.button.setBackgroundImage(nil, for:.focused)
+
 		return (cell)
 	}
 }

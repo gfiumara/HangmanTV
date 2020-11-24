@@ -46,7 +46,14 @@ open class HMAGameViewController: UIViewController
 
 		/* Guess the letter */
 		if let guessedLetter = UnicodeScalar(sender.tag) {
-			let _ = self.game.guessLetter(guessedLetter.escaped(asASCII:true).first!)
+			let correctGuess = self.game.guessLetter(guessedLetter.escaped(asASCII:true).first!)
+			if (correctGuess) {
+				cell?.button.setBackgroundImage(UIColor.systemGreen.withAlphaComponent(0.3).image(), for:.disabled)
+				cell?.button.setBackgroundImage(UIColor.systemGreen.withAlphaComponent(0.9).image(), for:.focused)
+			} else {
+				cell?.button.setBackgroundImage(UIColor.systemRed.withAlphaComponent(0.3).image(), for:.disabled)
+				cell?.button.setBackgroundImage(UIColor.systemRed.withAlphaComponent(0.9).image(), for:.focused)
+			}
 
 			/* Update labels */
 			self.updateDifficultyLabel()
