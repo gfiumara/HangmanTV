@@ -8,8 +8,6 @@ import UIKit
 
 class HMAKeyboardCollectionView : UICollectionView
 {
-	var usedIndexPaths:[IndexPath] = [IndexPath]()
-
 	required init?(coder aDecoder:NSCoder)
 	{
 		super.init(coder:aDecoder);

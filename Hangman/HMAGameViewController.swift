@@ -20,6 +20,7 @@ open class HMAGameViewController: UIViewController
 	@IBOutlet weak fileprivate var gallowsDrawingView: GallowsView!
 	@IBOutlet weak var difficultyLabel: UILabel!
 	fileprivate var game:HangmanGame
+	fileprivate var usedLetters: [IndexPath] = [IndexPath]()
 
 	public
 	required
@@ -39,7 +40,10 @@ open class HMAGameViewController: UIViewController
 
 	@IBAction func keyboardButtonPressed(_ sender:UIButton)
 	{
-		let cell:HMAKeyboardCollectionViewCell? = keyboardView.cellForItem(at: IndexPath(row:sender.tag - HMAConstants.Values.UnicodeA, section:0)) as! HMAKeyboardCollectionViewCell?
+		let indexPath = IndexPath(row:sender.tag - HMAConstants.Values.UnicodeA, section:0)
+		self.usedLetters.append(indexPath)
+
+		let cell:HMAKeyboardCollectionViewCell? = keyboardView.cellForItem(at: indexPath) as! HMAKeyboardCollectionViewCell?
 		cell?.label.textColor = UIColor.systemGray
 		cell?.button.isEnabled = false
 		cell?.isUserInteractionEnabled = false
