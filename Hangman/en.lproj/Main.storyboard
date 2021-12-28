@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="appleTV" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -116,7 +117,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnJ-A5-T8w">
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -146,10 +147,48 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMW-ik-9Qu" customClass="GallowsView" customModule="Hangman" customModuleProvider="target">
                                         <rect key="frame" x="222.5" y="0.0" width="800" height="800"/>
+                                        <subviews>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="srW-pU-FNA">
+                                                <rect key="frame" x="100" y="714" width="600" height="86"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clf-Y1-HRp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="86"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="New Game">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="focused">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="newGameButtonPressed:" destination="Q3k-42-2N5" eventType="primaryActionTriggered" id="S4h-Ua-vB7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRa-p6-YD4">
+                                                        <rect key="frame" x="330" y="0.0" width="270" height="86"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Menu">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="focused">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="menuButtonPressed:" destination="Q3k-42-2N5" eventType="primaryActionTriggered" id="OzB-h7-dfN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="srW-pU-FNA" firstAttribute="width" secondItem="HMW-ik-9Qu" secondAttribute="width" multiplier="0.75" id="9W8-L7-1yf"/>
+                                            <constraint firstAttribute="bottom" secondItem="srW-pU-FNA" secondAttribute="bottom" id="jbS-EB-cTt"/>
                                             <constraint firstAttribute="width" secondItem="HMW-ik-9Qu" secondAttribute="height" multiplier="1:1" id="jvt-TX-pX7"/>
-                                            <constraint firstAttribute="width" constant="800" id="p2A-Jg-PzS"/>
+                                            <constraint firstAttribute="width" constant="800" id="raM-mL-Pez"/>
+                                            <constraint firstItem="srW-pU-FNA" firstAttribute="centerX" secondItem="HMW-ik-9Qu" secondAttribute="centerX" id="vN0-2H-U2u"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_   _   _   _   _   _   _   _" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvU-6L-FZw">
@@ -175,15 +214,16 @@
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="Khb-4f-MWk" firstAttribute="leading" secondItem="QqX-PF-iZn" secondAttribute="leading" constant="16" id="8GE-y4-5xS"/>
-                            <constraint firstItem="Khb-4f-MWk" firstAttribute="bottom" secondItem="QqX-PF-iZn" secondAttribute="bottom" constant="8" symbolic="YES" id="GbU-bu-TTv"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="bottom" secondItem="QqX-PF-iZn" secondAttribute="bottom" symbolic="YES" id="GbU-bu-TTv"/>
                             <constraint firstItem="QqX-PF-iZn" firstAttribute="bottom" secondItem="aLn-Tu-mDA" secondAttribute="bottom" id="LZ7-kH-ISp"/>
-                            <constraint firstItem="Khb-4f-MWk" firstAttribute="top" secondItem="QqX-PF-iZn" secondAttribute="top" constant="8" symbolic="YES" id="cYY-pn-afj"/>
+                            <constraint firstItem="Khb-4f-MWk" firstAttribute="top" secondItem="QqX-PF-iZn" secondAttribute="top" symbolic="YES" id="cYY-pn-afj"/>
                             <constraint firstItem="aLn-Tu-mDA" firstAttribute="trailing" secondItem="QqX-PF-iZn" secondAttribute="trailing" constant="-16" id="leI-Dr-xBZ"/>
                             <constraint firstItem="aLn-Tu-mDA" firstAttribute="top" secondItem="QqX-PF-iZn" secondAttribute="top" id="rkH-ET-jeO"/>
                             <constraint firstItem="aLn-Tu-mDA" firstAttribute="leading" secondItem="Khb-4f-MWk" secondAttribute="trailing" constant="8" symbolic="YES" id="zs7-eF-HkS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="afterGameNextStepView" destination="srW-pU-FNA" id="lKa-tE-d79"/>
                         <outlet property="difficultyLabel" destination="YeY-Kd-fWt" id="fqp-Mc-bGR"/>
                         <outlet property="gallowsDrawingView" destination="HMW-ik-9Qu" id="rLh-dB-MAN"/>
                         <outlet property="guessedWordLabel" destination="rvU-6L-FZw" id="YVt-RE-bLi"/>

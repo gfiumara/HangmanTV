@@ -19,6 +19,7 @@ open class HMAGameViewController: UIViewController
 	@IBOutlet weak fileprivate var guessedWordLabel: UILabel!
 	@IBOutlet weak fileprivate var gallowsDrawingView: GallowsView!
 	@IBOutlet weak var difficultyLabel: UILabel!
+	@IBOutlet weak fileprivate var afterGameNextStepView: UIStackView!
 	fileprivate var game:HangmanGame
 	fileprivate var usedLetters: [IndexPath] = [IndexPath]()
 
@@ -75,6 +76,55 @@ open class HMAGameViewController: UIViewController
 		}
 	}
 
+	@IBAction func newGameButtonPressed(_ sender:UIButton)
+	{
+		self.beginNewGame()
+	}
+
+	@IBAction func menuButtonPressed(_ sender:UIButton)
+	{
+		self.dismiss(animated: true, completion: nil)
+	}
+
+	fileprivate
+	func beginNewGame()
+	{
+		self.game = HangmanGame(difficulty:self.difficulty)
+
+		self.afterGameNextStepView.isHidden = true
+
+		/* Update labels */
+		self.updateDifficultyLabel()
+		self.guessedWordLabel.text = self.game.printableGuessedWord
+		/* Update drawing parameters on the gallows view */
+		self.gallowsDrawingView.remainingChances = self.game.remainingGuesses
+		self.gallowsDrawingView.gameLost = false
+		self.gallowsDrawingView.gameWon = false
+		gallowsDrawingView.setNeedsDisplay()
+
+		/* Restore keyboard */
+		self.resetKeyboardViewColors()
+		self.keyboardView.isUserInteractionEnabled = true
+		self.keyboardView.setNeedsFocusUpdate()
+		self.keyboardView.setNeedsDisplay()
+		self.setNeedsFocusUpdate()
+	}
+
+	fileprivate
+	func resetKeyboardViewColors()
+	{
+		for row in 0...(self.keyboardView.numberOfItems(inSection: 0) - 1) {
+			let cell:HMAKeyboardCollectionViewCell? = keyboardView.cellForItem(at: IndexPath(row: row, section: 0)) as! HMAKeyboardCollectionViewCell?
+			cell?.label.textColor = UIColor.white
+			cell?.button.isEnabled = true
+			cell?.isUserInteractionEnabled = true
+			cell?.button.setBackgroundImage(nil, for:.disabled)
+			cell?.button.setBackgroundImage(nil, for:.focused)
+		}
+
+		self.usedLetters.removeAll()
+	}
+
 	fileprivate
 	func endOfGameDisplay()
 	{
@@ -85,6 +135,12 @@ open class HMAGameViewController: UIViewController
 		self.keyboardView.isUserInteractionEnabled = false
 		self.keyboardView.setNeedsFocusUpdate()
 		self.guessedWordLabel.attributedText = self.game.printableWordWithColoredUnguessedLetters
+		self.afterGameNextStepView.isHidden = false
+
+		for row in 0...(self.keyboardView.numberOfItems(inSection: 0) - 1) {
+			let cell:HMAKeyboardCollectionViewCell? = keyboardView.cellForItem(at: IndexPath(row:row, section: 0)) as! HMAKeyboardCollectionViewCell?
+			cell?.label.textColor = UIColor.systemGray
+		}
 	}
 
 	fileprivate
