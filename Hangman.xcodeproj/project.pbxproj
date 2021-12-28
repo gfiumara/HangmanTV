@@ -31,13 +31,13 @@
 		0840B6231BCAF6E8002BDF16 /* medium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = medium.plist; sourceTree = "<group>"; };
 		0840B6271BCAF776002BDF16 /* Wordlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wordlist.swift; sourceTree = "<group>"; };
 		0840B6291BCBE4A4002BDF16 /* HangmanGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanGame.swift; sourceTree = "<group>"; };
-		0862B031256B18E0002C47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		08B0C34B256D35DF00D55BD0 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		08B4C41C1BC49740005676A4 /* GallowsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GallowsView.swift; sourceTree = "<group>"; };
+		08BF1272277B5D88004BE3B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08BF1273277B5D88004BE3B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		08C2945C1BADC83800050048 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C2945F1BADC83800050048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C294611BADC83800050048 /* ChooseLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLevelViewController.swift; sourceTree = "<group>"; };
-		08C294641BADC83800050048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08C294661BADC83800050048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Hangman/Assets.xcassets; sourceTree = "<group>"; };
 		08C294681BADC83800050048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C294701BADEDA500050048 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -175,12 +175,10 @@
 			};
 			buildConfigurationList = 08C294571BADC83800050048 /* Build configuration list for PBXProject "Hangman" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
-				Base,
 			);
 			mainGroup = 08C294531BADC83800050048;
 			productRefGroup = 08C2945D1BADC83800050048 /* Products */;
@@ -232,7 +230,7 @@
 		0862B030256B18E0002C47C6 /* LaunchStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0862B031256B18E0002C47C6 /* Base */,
+				08BF1273277B5D88004BE3B7 /* en */,
 			);
 			name = LaunchStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -240,7 +238,7 @@
 		08C294631BADC83800050048 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				08C294641BADC83800050048 /* Base */,
+				08BF1272277B5D88004BE3B7 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
